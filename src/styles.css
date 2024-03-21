@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+  margin: 100; /* Removendo margens padrão do corpo da página */
+  display: flex;
+  justify-content: center; /* Centralizando o conteúdo horizontalmente */
+  align-items: center; /* Centralizando o conteúdo verticalmente */
+  height: 200vh; /* Ocupar 100% da altura da viewport */
+}
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+/* uso flexbox para alinhar os itens de um menu horizontalmente e garantir que eles se ajustem dinamicamente ao tamanho da tela:*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+
+nav li {
+  margin-right: 15px;
+}
+/*Parte dos botões*/
+.botao-menu {
+  background-color: orangered;
+  text-decoration: none;
+  color:white;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.imagens-produtos button {
+  background-color: orangered; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 8px 16px; /* Espaçamento interno do botão */
+  border: none; /* Remover borda do botão */
+  border-radius: 4px; /* Borda arredondada do botão */
+  cursor: pointer; /* Mudar o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo ao passar o mouse */
+}
+
+.imagens-produtos button:hover {
+  background-color:green; /* Alterar cor de fundo ao passar o mouse */
+}
+/*Descrição do produto*/
+.imagens-produtos p {
+  color: green;
+
+}
+
+
+.secao {
+  text-align: center;
+}
+
+.logo {
+  max-width:  300%; /* Define a largura máxima como 100% */
+  height: auto; /* Permite que a altura seja ajustada automaticamente */
+  margin-bottom: 10px; /* Adicionado espaçamento inferior */
+}
+
+.imagens-abaixo-do-slideshow {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens abaixo do slideshow sejam quebradas em várias linhas */
+  justify-content: center;
+  margin-top: 20px; /* Espaçamento superior para separar do slideshow */
+  max-width: 100%;/*Isso fará com que as imagens se ajustem automaticamente ao tamanho da tela.*/
+}
+
+.imagens-abaixo-do-slideshow img {
+  width: 300px; /* Largura das imagens */
+  height: 300px; /* Altura das imagens (ajuste conforme necessário) */
+  margin: 0 10px; /* Espaçamento entre as imagens */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.imagens-produtos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens abaixo do slideshow sejam quebradas em várias linhas */
+  justify-content: center;
+  margin-top: 20px; /* Espaçamento superior para separar do slideshow */
+}
+.imagens-produtos img {
+  width: 300px; /* Largura das imagens */
+  height: 300px; /* Altura das imagens (ajuste conforme necessário) */
+  margin: 0 10px; /* Espaçamento entre as imagens */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 100%;
+}
+
